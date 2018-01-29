@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css"> 
     <title>Les bases de l'html</title>
 </head>
-<body>
-        <h1>Les balises</h1>
-            <h2>Les balises paires</h2>
+<body> <h1>Les bases de l'html</h1>
+
+        <h2>Les balises</h2>
+            <h3>Les balises paires</h3>
                 <p>Elles s'ouvrent, contiennent du texte, et se ferment plus loin.</p>
+                <div class="liste">
                     <ul>
                         <li>titre (h1, h2, h3, ...)</li>
                         <li>paragraphe (p)</li>
@@ -17,33 +20,38 @@
                         <li>liste (ul,ol,li)</li>
                         <li>corps du document (body)</li>
                     </ul>
+                </div>
 
-            <h2>Les balises orphelines</h2>
+            <h3>Les balises orphelines</h3>
                 <p>Ce sont des balises qui servent le plus souvent à insérer un élément à un endroit précis (par exemple une image).<br>
                 Il n'est pas nécessaire de délimiter le début et la fin de l'image, on veut juste dire à l'ordinateur « Insère une image ici ».</p>
+                <div class="liste">
                     <ul>
                         <li>saut à la ligne (br)</li>
                         <li>image (img)</li>
                         <li>lien vers un fichier (link)</li>
                     </ul>
+                </div>
 
-        <h1>Les attributs</h1>
+        <h2>Les attributs</h2>
                 <p>Les attributs sont un peu les options des balises. Ils viennent les compléter pour donner des informations supplémentaires.<br> 
                 L'attribut se place après le nom de la balise ouvrante.</p>
 
-        <h1>La différence entre inline et block</h1>
+        <h2>La différence entre inline et block</h2>
             <p><i>block</i> : une balise de type block sur votre page web crée automatiquement un retour à la ligne avant et après. Il suffit d'imaginer tout simplement un bloc.<br>
             Votre page web sera en fait constituée d'une série de blocs les uns à la suite des autres. <br>
             Mais vous verrez qu'en plus, il est possible de mettre un bloc à l'intérieur d'un autre, ce qui va augmenter considérablement nos possibilités pour créer le design de notre site !
             <a href="https://openclassrooms.com/courses/apprenez-a-creer-votre-site-web-avec-html5-et-css3/le-modele-des-boites" target="_blank">Source</a></p>
             
             <p>
-                <ul><li>Exemples de balises block</li>
-                    <ul>
-                        <li>paragraphe (p)</li>
-                        <li>titre (h1, h2, h3, ...)</li>
-                        <li>pied de page (footer)</li>
-                </ul></ul>
+                    <div class="liste">
+                        <ul><li>Exemples de balises block</li>
+                            <ul>
+                                 <li>paragraphe (p)</li>
+                                 <li>titre (h1, h2, h3, ...)</li>
+                                 <li>pied de page (footer)</li>
+                         </ul></ul>
+                    </div>
             </p>
 
             <p><i>inline</i> : une balise de type inline se trouve obligatoirement à l'intérieur d'une balise block. <br>
@@ -51,29 +59,31 @@
             <a href="https://openclassrooms.com/courses/apprenez-a-creer-votre-site-web-avec-html5-et-css3/le-modele-des-boites" target="_blank">Source</a></p>
             
             <p>
-                    <ul><li>Exemples de balises inline</li>
-                        <ul>
-                            <li>image (img)</li>
-                            <li>structuration du texte (abbr, q, ...)</li>
-                            <li>tableau (table)</li>
-                    </ul></ul>
-                </p>
+                    <div class="liste">
+                        <ul><li>Exemples de balises inline</li>
+                            <ul>
+                                <li>image (img)</li>
+                                <li>structuration du texte (abbr, q, ...)</li>
+                                <li>tableau (table)</li>
+                        </ul></ul>
+                    </div>
+             </p>
 
-        <h1>Le markdown et l'HTML</h1>
-        <pre>
-            <p>Markdown :
-                Insérer une image : ![Texte alternatif](url_de_l'image "texte pour le titre, facultatif")
-                Insérer une citation : > Ce texte apparaîtra dans un élément HTML &lt;blockquote&gt;
-                Insérer une vidéo youtube : [texte du lien](url_du_lien "texte pour le titre, facultatif")
-            </p>
-        </pre>
+        <h2>Le markdown et l'HTML</h2>
+            <pre>
+                Markdown :
+                    Insérer une image : ![Texte alternatif](url_de_l'image "texte pour le titre, facultatif")
+                    Insérer une citation : > Ce texte apparaîtra dans un élément HTML &lt;blockquote&gt;
+                    Insérer une vidéo youtube : [texte du lien](url_du_lien "texte pour le titre, facultatif")
+            
+             </pre>
 
-        <pre>
-                <p>HTML :
+            <pre>
+                 HTML :
                     Insérer une image : &lt;img src="url_de_l'image ou lien relatif" alt="texte alternatif "/&gt;
                     Insérer une citation : &lt;blockquote&gt; pour les citations "longues", &lt;cite&gt; pour les citations du titre d'une œuvre ou d'un évènement et &lt;q&gt; pour les citations "courtes"
                     Insérer une vidéo youtube : &lt;object width="largeur de la vidéo" height="hauteur de la vidéo" data="url de la vidéo"&gt;&lt;/object&gt;
-                </p>
+                
             </pre>
     
 </body>
